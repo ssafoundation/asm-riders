@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://asm-riders.web.app/).
+This project was bootstrapped with [Live link](https://asm-riders.web.app/).
 
 
 
@@ -9,6 +9,9 @@ Open [asm-riders](https://asm-riders.web.app/) to view it in the browser.
 
 ## include this project
 ** React Router
+** react bootstrap
+** google font using cdn
+** font-awesome using cdn
 ** Firebase 
 ** Firebase Auth 
 ** Email password auth
