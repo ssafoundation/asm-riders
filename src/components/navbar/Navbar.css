@@ -1,0 +1,22 @@
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-navbar ul{
+    padding: 0;
+}
+.header-navbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+.header-navbar ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #000000;
+}
+li.login-page a {
+    background: #FF6E40;
+    color: #fff!important;
+}

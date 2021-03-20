@@ -1,0 +1,29 @@
+.details-map img {
+    width: 100%;
+    height: 100%;
+}
+.pick-from p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size:18px;
+}
+.details-sidebar {
+    background: #EFEFEF;
+    padding: 15px 25px;
+    height: 40vh;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.details-sidebar h3 {
+    margin-bottom: 20px;
+}
+.pick-from {
+    margin-bottom: 30px;
+}
+
+.pick-from input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+}
