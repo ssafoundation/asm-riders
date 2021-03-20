@@ -13,26 +13,46 @@
 }
 
 .rides-item img {
-    height: 150px;
+    width: 150px;
     margin-bottom: 15px;
     display: inline-block;
 }
 
 .rides-item {
     background: #fff;
-    padding: 15px 30px;
+    padding: 15px 10px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 .rides-item span {
     display: block;
 }
 
 @media only screen and (max-width: 1199px) {
- .rides-item img {
-    height: 130px;
-    margin-bottom: 15px;
-    display: inline-block;
+    .rides-item img {
+        width: 150px;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
 }
+
+@media only screen and (max-width: 767px) {
+    .rides-item img {
+        width: 100px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+    .main-page {
+        height: 115vh;
+    }
+    .main-content-wrap {
+        height: 115vh;
+    }
+}
+
+span.home-car {
+    display: unset;
+    font-weight: 700;
 }

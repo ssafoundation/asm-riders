@@ -75,3 +75,9 @@ span.remember-text {
     top: -12px;
     left: 10px;
 }
+span.nav-link {
+    color: #fff!important;
+    text-transform: capitalize!important;
+    background: #007bff;
+    padding: 10px 20px;
+}

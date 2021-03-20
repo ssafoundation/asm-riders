@@ -66,7 +66,7 @@ const Login = () => {
                 <div className="login-area-wrap">
                     {/* <p>email: {loggedInUser.email}</p> */}
                     <form onSubmit={handleSubmit} className="registetion-form">
-                        <h3>Login Your Account</h3>
+                        <h3><span className="title-color">Login</span> Your Account</h3>
                         <input onChange={handleChange} type="email" name='email' placeholder="email" required />
                         <input onChange={handleChange} type="password" name='password' placeholder="Password" required />
                         <input type="submit" className='btn btn-primary' value='Login' />

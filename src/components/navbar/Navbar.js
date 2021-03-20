@@ -1,27 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 // import { Link } from 'react-router-dom';
 
 import './Navbar.css'
 const Home = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    // console.log(loggedInUser);
     return (
         <div className="header-wrap container">
-            {/* <Navbar bg="light" expand="lg">
-                <Navbar> <Link to='/'><h2>ASM-RIDESRS</h2></Link></Navbar>
+            <Navbar expand="lg">
+                <Navbar> <Link to='/'><h2>ASM-<span className="title-color">RIDESRS</span></h2></Link></Navbar>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link to="/">Home</Nav.Link>
-                        <Nav.Link to="/destination">destination</Nav.Link>
-                        <Nav.Link to="/blog">Blog</Nav.Link>
-                        <Nav.Link to="/contact">Contact</Nav.Link>
-                        <Nav.Link to="/login">Login</Nav.Link>
-
+                        <Link to="/">Home</Link>
+                        <Link to="/destination">Destination</Link>
+                        <Link to="/blog">Blog</Link>
+                        <Link to="/contact">Contact</Link>
+                        
+                        {loggedInUser.email ? <span className="nav-link">{loggedInUser.displayName}</span> : <Link className="login-page" to="/login">Login</Link>}
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar> */}
-            <div className="header-logo">
+            </Navbar>
+            {/* <div className="header-logo">
                 <Link to='/'><h2>ASM-RIDESRS</h2></Link>
 
             </div>
@@ -43,7 +46,7 @@ const Home = () => {
                         <Link to="/login">Login</Link>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 };

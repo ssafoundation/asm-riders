@@ -69,7 +69,7 @@ const Registetion = () => {
                 <div className="main-content-wrap">
                     <div className="login-area-wrap">
                         <form onSubmit={handleSubmit} className="registetion-form">
-                            <h3>Create an account</h3>
+                            <h3>Create an <span className="title-color">account</span></h3>
                             <input onChange={handleChange} type="text" placeholder="Name" required />
                             <input onChange={handleChange} type="email" name='email' placeholder="email" required />
                             <input onChange={handleChange} type="password" name='password' placeholder="Password" />

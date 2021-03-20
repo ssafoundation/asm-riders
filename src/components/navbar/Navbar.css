@@ -16,7 +16,23 @@
     display: block;
     color: #000000;
 }
-li.login-page a {
-    background: #FF6E40;
+a.login-page  {
+    background: #007bff;
     color: #fff!important;
+}
+div#basic-navbar-nav a {
+    padding: 10px 20px;
+    color: #000;
+}
+.header-wrap.container a {
+    color: #000;
+    font-weight: 600;
+}
+span.nav-link {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: capitalize!important;
+    display: inline-block;
 }
